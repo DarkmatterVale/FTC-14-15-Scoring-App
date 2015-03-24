@@ -1,6 +1,19 @@
 <resources>
     <string name="app_name">Scoring_App</string>
-
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="main_autonomous_title">Autonomous</string>
+    <string name="main_autonomous_button">Calculate points during autonomous</string>
+
+    <string name="current_total">Current Total:</string>
+
+    <string name="autonomous_title_text">Autonomous</string>
+    <string name="autonomous_driveOffRamp_label_text">Drove off ramp ( 20 points ):</string>
+    <string name="autonomous_ballsInCenterGoal_label">Height of balls in center goal:</string>
+    <string name="autonomous_ballsInLargeGoal_label">Height of balls in large goal: </string>
+    <string name="autonomous_ballsInMediumGoal_label">Height of balls in medium goal:</string>
+    <string name="autonomous_ballsInSmallGoal_label">Height of balls in small goal:</string>
+    <string name="autonomous_parkingZone_label"># of goals/robots in the parking zone:</string>
+    <string name="autonomous_hint">Enter here</string>
+    <string name="autonomous_current_total_hint">0</string>
 </resources>

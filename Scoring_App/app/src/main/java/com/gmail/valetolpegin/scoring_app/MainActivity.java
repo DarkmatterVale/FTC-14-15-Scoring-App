@@ -7,11 +7,24 @@ import android.view.MenuItem;
 
 
 public class MainActivity extends ActionBarActivity {
+    private android.app.Fragment mAutonomousFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        android.app.FragmentManager fm = getFragmentManager();
+        mAutonomousFragment = fm.findFragmentById( R.id.fragmentContainer );
+
+        if ( mAutonomousFragment == null )
+        {
+            mAutonomousFragment = new AutonomousOptions();
+
+            fm.beginTransaction()
+                    .add( R.id.fragmentContainer, mAutonomousFragment )
+                    .commit();
+        }
     }
 
 
