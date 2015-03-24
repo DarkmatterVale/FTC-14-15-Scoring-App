@@ -24,7 +24,6 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
         View v = inflater.inflate( R.layout.fragment_main, parent, false );
 
-
         mCalculateDC = (Button)v.findViewById( R.id.main_driver_controlled_button );
         mCalculateAutonomous = (Button)v.findViewById( R.id.main_autonomous_button );
         mCurrentTotal = (EditText)v.findViewById( R.id.main_current_total );
