@@ -6,14 +6,6 @@
     android:paddingRight="16dp"
     android:orientation="vertical" >
 
-    <TextView
-        android:text="@string/autonomous_title_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:gravity="center"
-        style="?android:listSeparatorTextViewStyle" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,6 +19,26 @@
 
         <CheckBox
             android:id="@+id/autonomous_driveOffRamp_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="@string/autonomous_dropKickstand_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <CheckBox
+            android:id="@+id/autonomous_dropKickstand_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -62,48 +74,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/autonomous_ballsInLargeGoal_label" />
+            android:text="@string/autonomous_ballsInGoal_label" />
 
         <EditText
-            android:id="@+id/autonomous_largeGoal_count"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/autonomous_hint" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="8dp"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/autonomous_ballsInMediumGoal_label" />
-
-        <EditText
-            android:id="@+id/autonomous_mediumGoal_count"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/autonomous_hint" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="8dp"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/autonomous_ballsInSmallGoal_label" />
-
-        <EditText
-            android:id="@+id/autonomous_smallGoal_count"
+            android:id="@+id/autonomous_ballsInGoal_count"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="@string/autonomous_hint" />

@@ -5,14 +5,6 @@
     android:paddingRight="16dp"
     android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="16dp"
-        android:text="@string/driver_controlled_title"
-        style="?android:listSeparatorTextViewStyle" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -111,7 +103,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="64dp"
+        android:paddingBottom="16dp"
         android:orientation="horizontal" >
 
         <TextView

@@ -3,67 +3,63 @@
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
     android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/main_autonomous_label"
-        style="?android:listSeparatorTextViewStyle" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:paddingBottom="8dp"
         android:orientation="horizontal" >
 
-        <Button
-            android:id="@+id/main_autonomous_button"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_autonomous_button" />
+            android:text="@string/penalty_minor_label" />
 
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/main_driver_controlled_label"
-        style="?android:listSeparatorTextViewStyle" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="192sp"
-        android:orientation="horizontal" >
-
-        <Button
-            android:id="@+id/main_driver_controlled_button"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/penalty_minor"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/main_driver_controlled_button" />
+            android:hint="@string/penalty_hint" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:paddingBottom="64dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/penalty_major_label" />
+
+        <EditText
+            android:id="@+id/penalty_major"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/penalty_hint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_current_total_label" />
+            android:text="@string/current_total" />
 
         <EditText
-            android:id="@+id/main_current_total"
+            android:id="@+id/penalties_current_total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/main_current_total"
-            android:enabled="false" />
+            android:enabled="false"
+            android:hint="@string/penalty_hint" />
+
     </LinearLayout>
 
 </LinearLayout>
