@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FTC_Scoring_App</string>
+    <string name="app_name">Scoring FTC</string>
     <string name="action_settings">Settings</string>
 
     <string name="main_autonomous_label">Autonomous</string>
